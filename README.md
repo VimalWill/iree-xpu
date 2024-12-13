@@ -6,4 +6,6 @@ Expiremental integration of custom compiler plugin with IREE compiler stack. Acc
 
 code reference: [Plugin API](https://github.com/iree-org/iree/tree/main/compiler/src/iree/compiler/PluginAPI)
 
-## Build Instructions
+## Reference 
+1. https://github.com/nod-ai/iree-amd-aie
+2. https://github.com/iree-org/iree/tree/main/samples/compiler_plugins
