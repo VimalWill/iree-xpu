@@ -1,5 +1,5 @@
-#ifndef __QPU_IR_QPU_DIALECT__
-#define __QPU_IR_QPU_DIALECT__
+#ifndef __QPU_IR_QPU_DIALECT_TD__
+#define __QPU_IR_QPU_DIALECT_TD__
 
 include "mlir/IR/DialectBase.td"
 
@@ -11,4 +11,4 @@ def QPU_Dialect : Dialect {
 }
 
 
-#endif //__QPU_IR_QPU_DIALECT__
+#endif //__QPU_IR_QPU_DIALECT_TD__
