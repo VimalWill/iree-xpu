@@ -10,7 +10,6 @@
 
 using namespace mlir;
 
-
 namespace mlir::iree_compiler::QPU {
 struct QPUTargetOptions {
   StringRef DeviceID = "qpu-device";
@@ -38,7 +37,7 @@ public:
       configItems.emplace_back(StringAttr::get(context, name), value);
     };
 
-    if (auto target = QPU::getDeviceModel(options_.target, context)) {
+    if (DeviceModel target = QPU::getDeviceModel(options_.target, context)) {
       addConfig("", target);
     } else {
       emitError(b.getUnknownLoc(), "Unknown Target");
