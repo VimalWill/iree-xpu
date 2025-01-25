@@ -21,9 +21,20 @@ def MatMul : QPU_Op<"matmul", [Pure]> {
         qpu.matmul
 
         ```
-    }]; 
+    }];
 
-    //todo: define ins and outs
+    lets arguments = (ins
+        TensorOf<[F32]>:$input_tensor, 
+        TensorOf<[F32]>:$weight_tensor, 
+        Optional<TensorOf<[F32]>>:$bias_tensor
+    ); 
+
+    lets results = (outs TensorOf<[FP32]>:$result); 
+    lets builders = [
+        OpBuilder<(ins "Value":$input_tensor,
+                       "Value":$weight_tensor,
+                       "Value":$bias_tensor)>
+    ]; 
 }
 
 #endif //__QPU_IR_QPU_OPS_TD__

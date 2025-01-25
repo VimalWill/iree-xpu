@@ -5,9 +5,9 @@ include "mlir/IR/DialectBase.td"
 
 def QPU_Dialect : Dialect {
 
-    let name = "qpu-dialect"; 
+    let name = "qpu"; 
     let summary = "base dialect for qpu hardware target"; 
-    let cppNamespace = "::mlir::qpu"; 
+    let cppNamespace = "::mlir::iree_compiler::qpu"; 
 }
 
 
