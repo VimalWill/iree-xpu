@@ -72,4 +72,5 @@ public:
 private:
   QPUTargetOptions options_;
 };
+
 } // namespace mlir::iree_compiler::QPU

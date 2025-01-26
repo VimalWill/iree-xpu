@@ -7,7 +7,7 @@ def QPU_Dialect : Dialect {
 
     let name = "qpu"; 
     let summary = "base dialect for qpu hardware target"; 
-    let cppNamespace = "::mlir::iree_compiler::qpu"; 
+    let cppNamespace = "::mlir::iree_compiler::QPU"; 
 }
 
 
