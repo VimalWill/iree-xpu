@@ -3,6 +3,9 @@
 
 #include "mlir/IR/Dialect.h"
 #include "mlir/IR/IRMapping.h"
+#include "mlir/IR/Builders.h"
+#include "mlir/IR/BuiltinOps.h"
+#include "mlir/IR/BuiltinTypes.h"
 
 #include "xpu/IR/XpuOps.h"
 #include "xpu/IR/XpuDialect.h.inc"
